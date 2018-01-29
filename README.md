@@ -1,6 +1,6 @@
 ## Building Utility Class for String Array Objects
 * **Objective**
-    * To complete the utility methods in the class [StringArrayUtils]()
+    * Ensure [StringArrayUtilsTest](https://github.com/Zipcoder/CR-MicroLabs-Arrays-StringArrayUtilities/blob/master/src/test/java/com/zipcodewilmington/StringArrayUtilsTest.java) passes each test by completing the utility methods in the class [StringArrayUtils](https://github.com/Zipcoder/CR-MicroLabs-Arrays-StringArrayUtilities/blob/master/src/main/java/com/zipcodewilmington/StringArrayUtils.java)
         * `int getNumberOfOccurrences(String[] stringArray, String stringToCheck)`
         * `boolean contains(String[] stringArray, String stringToCheck)`
         * `String[] removeValue(String[] stringArray, String stringToRemove)`
