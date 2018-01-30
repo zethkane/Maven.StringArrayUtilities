@@ -1,9 +1,18 @@
 ## Building Utility Class for String Array Objects
 * **Objective**
     * Ensure [StringArrayUtilsTest](https://github.com/Zipcoder/CR-MicroLabs-Arrays-StringArrayUtilities/blob/master/src/test/java/com/zipcodewilmington/StringArrayUtilsTest.java) passes each test by completing the methods [stubbed out](https://en.wikipedia.org/wiki/Method_stub) in the class [StringArrayUtils](https://github.com/Zipcoder/CR-MicroLabs-Arrays-StringArrayUtilities/blob/master/src/main/java/com/zipcodewilmington/StringArrayUtils.java)
-        * `int getNumberOfOccurrences(String[] stringArray, String stringToCheck)`
-        * `boolean contains(String[] stringArray, String stringToCheck)`
-        * `String[] removeValue(String[] stringArray, String stringToRemove)`
+        * `String getFirstElement(String[] array)`
+        * `String getSecondElement(String[] array)`
+        * `String getLastElement(String[] array)`
+        * `String getSecondToLastElement(String[] array)`
+        * `boolean contains(String[] array, String value)`
+        * `String[] reverse(String[] array)`
+        * `boolean isPalindromic(String[] array)`
+        * `boolean isPangramic(String[] array)`
+        * `int getNumberOfOccurrences(String[] array, String value)`
+        * `String[] removeValue(String[] array, String value)`
+        * `String[] removeConsecutiveDuplicates(String[] array, String value)`
+        * `String[] packConsecutiveDuplicates(String[] array, String value)`
         
 * **Purpose**
     * To establish greater familiarity with loops and arrays.
@@ -23,9 +32,9 @@
 
 
 <br><br><br><br>
-## `getFirstElement(array)`
+## `String getFirstElement(String[] array)`
 * **Description**
-   * Given an array of `String` objects, return the first element of the array.
+    * Given an array of `String` objects, return the first element of the array.
 
 ### Example 1
 * Sample Script
@@ -105,7 +114,7 @@
 
 
 <br><br><br><br>
-## `getSecondElement(array)`
+## `String getSecondElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the first element of the array.
 
@@ -204,7 +213,7 @@
 
 
 <br><br><br><br>
-## `getLastElement(array)`
+## `String getLastElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the last element of the array.
 
@@ -287,7 +296,7 @@
 
 
 <br><br><br><br>
-## `getSecondToLastElement(array)`
+## ## `String getSecondToLastElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the next-to-last element of the array.
 
@@ -375,7 +384,7 @@
 
 
 <br><br><br><br>
-## `contains(array, value)`
+## `boolean contains(String[] array, String value)`
 * **Description**
    * Given an array of `String` objects named `array` and a `String` object named `value`<br>return true if `value` appears in `arrays`.
 
@@ -440,7 +449,7 @@
 
 
 <br><br><br><br>
-## `reverse(array)`
+## `String[] reverse(String[] array)`
 * **Description**
    * Given an array of `String` objects, return an array with identical contents in reverse order.
 
@@ -542,7 +551,7 @@
 
 
 <br><br><br><br>
-## `isPalindromic(array)`
+## `boolean isPalindromic(String[] array)`
 * **Description**
     * A [palindrome](http://www.dictionary.com/browse/palindromic) is a sequence that is the same backwards and forwards.
     * Given an array of `String` objects, return `true` if the array is palindromic.
@@ -639,7 +648,7 @@
 
 
 <br><br><br><br>
-## `isPangramic(array)`
+## `boolean isPangramic(String[] array)`
 * **Description**
     * A [pangram](http://www.dictionary.com/browse/pangram) is a sequence that contains all letters of the alphabet.
     * Given an array of `String` objects, return `true` if the array is palindromic.
@@ -703,7 +712,7 @@
 
 
 <br><br><br><br>
-## `getNumberOfOccurrences(array, value)`
+## `int getNumberOfOccurrences(String[] array, String value)`
 * **Description**
     * Given an array of `String` objects named `array` and a `String` object named `value`<br>return the number of times `value` appears in `arrays`
 
@@ -818,7 +827,7 @@
 
 
 <br><br><br><br>
-## `removeConsecutiveDuplicates(array)`
+## `String[] removeConsecutiveDuplicates(String[] array, String value)`
 * **Description**
     * Given an array of `String` objects, return an array of Strings with conseuctive duplicates removed.
         
@@ -912,7 +921,7 @@
 
 
 <br><br><br><br>
-## `packConsecutiveDuplicates(array)`
+## `String[] packConsecutiveDuplicates(String[] array)`
 * **Description**
     * Given an array of `char` objects, return an array of Strings with consecutive duplicates placed in an array.
         
@@ -1019,7 +1028,7 @@
 
 
 <br><br><br><br>
-## `removeValues(array, valueToRemove)`
+## `String[] removeValues(String[] array, String valueToRemove)`
 * **Description**
     * Given an array of `String` objects named `array` and a `String` object named `valueToRemove`<br>create and return an array containing identical contents excluding objects whose value is equivalent to `valueToRemove`. Ensure that the length of the newly created array has been resized based on the removal of the undesired elements. 
         
