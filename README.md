@@ -31,6 +31,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
 ## `String getFirstElement(String[] array)`
 * **Description**
@@ -113,6 +136,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
 ## `String getSecondElement(String[] array)`
 * **Description**
@@ -163,9 +202,6 @@
     ```
 
 
-
-
-
 ### Example 3
 * Sample Script
 
@@ -186,6 +222,14 @@
     ```
     fox
     ```
+
+
+
+
+
+
+
+
 
 
 
@@ -295,6 +339,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
 ## ## `String getSecondToLastElement(String[] array)`
 * **Description**
@@ -383,6 +453,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
 ## `boolean contains(String[] array, String value)`
 * **Description**
@@ -434,6 +522,36 @@
     ```
     false
     ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -526,6 +644,12 @@
     ```
     [dwarf, lazy, the, over, jumps, goblin, onyx, quick, The]
     ```
+
+
+
+
+
+
 
 
 
@@ -647,6 +771,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
 ## `boolean isPangramic(String[] array)`
 * **Description**
@@ -695,7 +830,25 @@
     ```
     true
     ```
-    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -785,14 +938,6 @@
     ```
     1
     ```
-
-
-
-
-
-
-
-
 
 
 
@@ -920,6 +1065,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
 ## `String[] packConsecutiveDuplicates(String[] array)`
 * **Description**
@@ -946,12 +1109,6 @@
     ```
     [aaa, b, cc, aa, d, eee];
     ```
-    
-    
-
-
-
-
 
 
 ### Example 2
@@ -974,10 +1131,6 @@
     ```
     [tt, q, aaa, b, cc, aa, d, eee];
     ```
-    
-
-
-
 
 
 ### Example 3
@@ -1045,8 +1198,6 @@
     // : Then
     System.out.println(Arrays.toString(actual));
     ```
-
-
 
 * Sample Output
     ```
