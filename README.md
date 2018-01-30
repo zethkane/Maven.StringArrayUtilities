@@ -366,7 +366,7 @@
 
 
 <br><br><br><br>
-## ## `String getSecondToLastElement(String[] array)`
+## `String getSecondToLastElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the next-to-last element of the array.
 
