@@ -105,7 +105,7 @@
 
 <br><br><br><br>
 ## Sample Behavior<br> `StringArrayUtils.getNumberOfOccurrences(array, value)`
-* **Method Description**
+* **Description**
     * Given an array of `String` objects named `array` and a `String` object named `value`<br>return the number of times `value` appears in `arrays`
 
 ### Example 1
@@ -196,7 +196,8 @@
 
 <br><br><br><br>
 ## Sample Behavior<br> `StringArrayUtils.contains(array, value)`
-
+* **Description**
+   * Given an array of `String` objects named `array` and a `String` object named `value`<br>return true if `value` appears in `arrays`.
 ### Example 1
 * Sample Script
 
