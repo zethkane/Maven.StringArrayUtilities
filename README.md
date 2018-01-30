@@ -287,7 +287,7 @@
 
 
 <br><br><br><br>
-## `getNextToLastElement(array)`
+## `getSecondToLastElement(array)`
 * **Description**
    * Given an array of `String` objects, return the next-to-last element of the array.
 
@@ -299,7 +299,7 @@
     String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getNextToLastElement(array);
+    boolean outcome = StringArrayUtils.getSecondToLastElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -912,9 +912,9 @@
 
 
 <br><br><br><br>
-## `packDuplicates(array)`
+## `packConsecutiveDuplicates(array)`
 * **Description**
-    * Given an array of `char` objects, return an array of Strings with conseuctive duplicates placed in an array.
+    * Given an array of `char` objects, return an array of Strings with consecutive duplicates placed in an array.
         
 
 ### Example 1
@@ -922,10 +922,10 @@
 
     ```
     // : Given
-	char[] array = {'a' 'a' 'a' 'a' 'b' 'c' 'c' 'a' 'a' 'd'}
+	String[] array = {"a", "a", "a", "a", "b", "c", "c", "a", "a", "d"};
 	
     // : When
-    String[] actual = StringArrayUtils.packDuplicates(array);
+    String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
     
     // : Then
     System.out.println(Arrays.toString(actual));
@@ -950,10 +950,10 @@
 
     ```
     // : Given
-	char[] array = {'t', 't', 'q', 'a' 'a' 'a' 'a' 'b'}
+	String[] array = {"t", "t", "q", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e"}; 
 	
     // : When
-    String[] actual = StringArrayUtils.packDuplicates(array);
+    String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
     
     // : Then
     System.out.println(Arrays.toString(actual));
@@ -976,10 +976,10 @@
 
     ```
     // : Given
-	char[] array = {'m', 'o', 'o', 'n' 'm' 'a' 'n'}
+	String[] array = {"m", "o", "o", "n", "m", "a", "n"}
 	
     // : When
-    String[] actual = StringArrayUtils.packDuplicates(array);
+    String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
     
     // : Then
     System.out.println(Arrays.toString(actual));
