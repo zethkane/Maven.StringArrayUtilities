@@ -18,7 +18,7 @@
 
 
 <br><br><br><br>
-## Sample Behavior<br> `removeValues(array, valueToRemove)`
+## `removeValues(array, valueToRemove)`
 * **Description**
     * Given an array of `String` objects named `array` and a `String` object named `valueToRemove`<br>create and return an array containing identical contents excluding objects whose value is equivalent to `valueToRemove`. Ensure that the length of the newly created array has been resized based on the removal of the undesired elements. 
         
@@ -104,7 +104,7 @@
 
 
 <br><br><br><br>
-## Sample Behavior<br> `getNumberOfOccurrences(array, value)`
+## `getNumberOfOccurrences(array, value)`
 * **Description**
     * Given an array of `String` objects named `array` and a `String` object named `value`<br>return the number of times `value` appears in `arrays`
 
@@ -195,7 +195,7 @@
 
 
 <br><br><br><br>
-## Sample Behavior<br> `contains(array, value)`
+## `contains(array, value)`
 * **Description**
    * Given an array of `String` objects named `array` and a `String` object named `value`<br>return true if `value` appears in `arrays`.
 ### Example 1
