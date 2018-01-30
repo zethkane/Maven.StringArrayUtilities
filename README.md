@@ -17,31 +17,390 @@
 
 
 
+
+
+
+
+
 <br><br><br><br>
-## `removeValues(array, valueToRemove)`
+## `getFirstElement(array)`
 * **Description**
-    * Given an array of `String` objects named `array` and a `String` object named `valueToRemove`<br>create and return an array containing identical contents excluding objects whose value is equivalent to `valueToRemove`. Ensure that the length of the newly created array has been resized based on the removal of the undesired elements. 
-        
+   * Given an array of `String` objects, return the first element of the array.
+
 ### Example 1
 * Sample Script
 
     ```
     // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+    String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    String[] actual = StringArrayUtils.removeValues(array, "aba");
+    boolean outcome = StringArrayUtils.getFirstElement(array);
     
     // : Then
-    System.out.println(Arrays.toString(actual));
+    System.out.println(outcome);
     ```
 
 
 
 * Sample Output
+
     ```
-    [baa, bab, bba, bba, bba, bba, bbb, bbb};
+    quick
     ```
+    
+    
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getFirstElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    brown
+    ```
+
+
+
+
+
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getFirstElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    fox
+    ```
+
+
+
+
+
+
+
+<br><br><br><br>
+## `getSecondElement(array)`
+* **Description**
+   * Given an array of `String` objects, return the first element of the array.
+
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getSecondElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    quick
+    ```
+    
+    
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
+    // : When
+    boolean outcome = StringArrayUtils.getFirstElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    brown
+    ```
+
+
+
+
+
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
+    // : When
+    boolean outcome = StringArrayUtils.getFirstElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    fox
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `getLastElement(array)`
+* **Description**
+   * Given an array of `String` objects, return the last element of the array.
+
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getLastElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    dog
+    ```
+    
+    
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getLastElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    lazy
+    ```
+
+
+
+
+
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getLastElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    the
+    ```
+    
+    
+    
+
+
+
+
+
+<br><br><br><br>
+## `getNextToLastElement(array)`
+* **Description**
+   * Given an array of `String` objects, return the next-to-last element of the array.
+
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getNextToLastElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    lazy
+    ```
+    
+    
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "lazy"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getNextToLastElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    over
+    ```
+
+
+
+
+
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.getNextToLastElement(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    jumps
+    ```
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `contains(array, value)`
+* **Description**
+   * Given an array of `String` objects named `array` and a `String` object named `value`<br>return true if `value` appears in `arrays`.
+
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.contains(array, "the");
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    true
+    ```
+    
     
     
 
@@ -50,22 +409,91 @@
 
     ```
     // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    String[] actual = StringArrayUtils.removeValues(array, "bba");
+    boolean outcome = StringArrayUtils.contains(array, "potatoes");
     
     // : Then
-    System.out.println(Arrays.toString(actual));
+    System.out.println(outcome);
     ```
 
 
 
 * Sample Output
+
     ```
-    [aba, aba, baa, bab, bbb, bbb];
+    false
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `reverse(array)`
+* **Description**
+   * Given an array of `String` objects, return an array with identical contents in reverse order.
+
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.contains(array, "the");
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    [dog, lazy, the, over, jumps, fox, brown, quick, the]
     ```
     
+    
+    
+
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"Pack", "my", "box", "with", "five", "dozen", "liquor", "jugs"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.contains(array, "potatoes");
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    [jugs, liquor, dozen, five, with, box, my, Pack]
+    ```
+
+
+
+
     
 
 ### Example 3
@@ -73,21 +501,192 @@
 
     ```
     // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+    String[] array = {"The", "quick", "onyx", "goblin", "jumps", "over", "the", "lazy", "dwarf"};
     
     // : When
-    String[] actual = StringArrayUtils.removeValues(array, "bbb");
+    boolean outcome = StringArrayUtils.contains(array, "potatoes");
     
     // : Then
-    System.out.println(Arrays.toString(actual));
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+
+    ```
+    [dwarf, lazy, the, over, jumps, goblin, onyx, quick, The]
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `isPalindromic(array)`
+* **Description**
+    * A [palindrome](http://www.dictionary.com/browse/palindromic) is a sequence that is the same backwards and forwards.
+    * Given an array of `String` objects, return `true` if the array is palindromic.
+        
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"a", "b", "c", "b", "a"}
+    
+    // : When
+    boolean outcome = StringArrayUtils.isPalindrome(array);
+    
+    // : Then
+    System.out.println(outcome);
     ```
 
 
 
 * Sample Output
     ```
-    [aba, aba, baa, bab, bba, bba, bba, bba];
+    true
     ```
+    
+    
+        
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"Is this a plaindrome?", "This is a plaindrome", "Is this a palindrome?"}
+    
+    // : When
+    boolean outcome = StringArrayUtils.isPalindrome(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+    ```
+    true
+    ```
+    
+        
+
+
+        
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"Is this a plaindrome?", "This is not a plaindrome", "Is this a palindrome?", "This is not a palindrome"}
+    
+    // : When
+    boolean outcome = StringArrayUtils.isPalindrome(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+    ```
+    false
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `isPangramic(array)`
+* **Description**
+    * A [pangram](http://www.dictionary.com/browse/pangram) is a sequence that contains all letters of the alphabet.
+    * Given an array of `String` objects, return `true` if the array is palindromic.
+        
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"The quick brown", "Fox jumps over", "The lazy dog"}
+    
+    // : When
+    boolean outcome = StringArrayUtils.isPangramic(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+    ```
+    true
+    ```
+    
+    
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"The", "quick", "onyx", "goblin", "jumps", "over", "the", "lazy", "dwarf"};
+    
+    // : When
+    boolean outcome = StringArrayUtils.isPangramic(array);
+    
+    // : Then
+    System.out.println(outcome);
+    ```
+
+
+
+* Sample Output
+    ```
+    true
+    ```
+    
 
 
 
@@ -194,32 +793,256 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br>
-## `contains(array, value)`
+## `removeConsecutiveDuplicates(array)`
 * **Description**
-   * Given an array of `String` objects named `array` and a `String` object named `value`<br>return true if `value` appears in `arrays`.
+    * Given an array of `String` objects, return an array of Strings with conseuctive duplicates removed.
+        
+        
+
 ### Example 1
 * Sample Script
 
     ```
     // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
     
     // : When
-    boolean outcome = StringArrayUtils.contains(array, "the");
+    String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
     
     // : Then
-    System.out.println(outcome);
+    System.out.println(Arrays.toString(actual));
     ```
 
 
 
 * Sample Output
+    ```
+    [aba, baa, bab, bba, bbb];
+    ```
+
+
+
+
+### Example 2
+* Sample Script
 
     ```
-    true
+    // : Given
+    String[] array = {"aba", "aba", "baa", "bab", "bba", "zzz", "bba", "bba", "bba", "bbb", "bbb"};
+    
+    // : When
+    String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
+    ```
+
+
+
+* Sample Output
+    ```
+    [aba, baa, bab, bba, zzz, bba, bbb];
+    ```
+
+
+
+
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"aba", "aba", "baa", "bab", "bba", "zzz", "bba", "bba", "bba", "bbb", "bbb", "aba", "bbb"};
+    
+    // : When
+    String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
+    ```
+
+
+
+* Sample Output
+    ```
+    [aba, baa, bab, bba, zzz, bba, aba, bbb];
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `packDuplicates(array)`
+* **Description**
+    * Given an array of `char` objects, return an array of Strings with conseuctive duplicates placed in an array.
+        
+
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+	char[] array = {'a' 'a' 'a' 'a' 'b' 'c' 'c' 'a' 'a' 'd'}
+	
+    // : When
+    String[] actual = StringArrayUtils.packDuplicates(array);
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
+    ```
+
+
+
+* Sample Output
+    ```
+    [aaa, b, cc, aa, d, eee];
     ```
     
+    
+
+
+
+
+
+
+### Example 2
+* Sample Script
+
+    ```
+    // : Given
+	char[] array = {'t', 't', 'q', 'a' 'a' 'a' 'a' 'b'}
+	
+    // : When
+    String[] actual = StringArrayUtils.packDuplicates(array);
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
+    ```
+
+
+
+* Sample Output
+    ```
+    [tt, q, aaa, b, cc, aa, d, eee];
+    ```
+    
+
+
+
+
+
+### Example 3
+* Sample Script
+
+    ```
+    // : Given
+	char[] array = {'m', 'o', 'o', 'n' 'm' 'a' 'n'}
+	
+    // : When
+    String[] actual = StringArrayUtils.packDuplicates(array);
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
+    ```
+
+
+
+* Sample Output
+    ```
+    [m, oo, n, m, a, n];
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+## `removeValues(array, valueToRemove)`
+* **Description**
+    * Given an array of `String` objects named `array` and a `String` object named `valueToRemove`<br>create and return an array containing identical contents excluding objects whose value is equivalent to `valueToRemove`. Ensure that the length of the newly created array has been resized based on the removal of the undesired elements. 
+        
+### Example 1
+* Sample Script
+
+    ```
+    // : Given
+    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+    
+    // : When
+    String[] actual = StringArrayUtils.removeValues(array, "aba");
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
+    ```
+
+
+
+* Sample Output
+    ```
+    [baa, bab, bba, bba, bba, bba, bbb, bbb};
+    ```
     
     
 
@@ -228,19 +1051,58 @@
 
     ```
     // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
     
     // : When
-    boolean outcome = StringArrayUtils.contains(array, "potatoes");
+    String[] actual = StringArrayUtils.removeValues(array, "bba");
     
     // : Then
-    System.out.println(outcome);
+    System.out.println(Arrays.toString(actual));
     ```
 
 
 
 * Sample Output
+    ```
+    [aba, aba, baa, bab, bbb, bbb];
+    ```
+    
+    
+
+### Example 3
+* Sample Script
 
     ```
-    false
+    // : Given
+    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+    
+    // : When
+    String[] actual = StringArrayUtils.removeValues(array, "bbb");
+    
+    // : Then
+    System.out.println(Arrays.toString(actual));
     ```
+
+
+
+* Sample Output
+    ```
+    [aba, aba, baa, bab, bba, bba, bba, bba];
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
