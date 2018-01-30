@@ -35,7 +35,7 @@
     String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getFirstElement(array);
+    String outcome = StringArrayUtils.getFirstElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -58,7 +58,7 @@
     String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getFirstElement(array);
+    String outcome = StringArrayUtils.getFirstElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -84,7 +84,7 @@
     String[] array = {"fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getFirstElement(array);
+    String outcome = StringArrayUtils.getFirstElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -117,7 +117,7 @@
     String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getSecondElement(array);
+    String outcome = StringArrayUtils.getSecondElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -139,7 +139,7 @@
     // : Given
     String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
     // : When
-    boolean outcome = StringArrayUtils.getFirstElement(array);
+    String outcome = StringArrayUtils.getFirstElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -164,7 +164,7 @@
     // : Given
     String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
     // : When
-    boolean outcome = StringArrayUtils.getFirstElement(array);
+    String outcome = StringArrayUtils.getFirstElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -216,7 +216,7 @@
     String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getLastElement(array);
+    String outcome = StringArrayUtils.getLastElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -239,7 +239,7 @@
     String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy"};
     
     // : When
-    boolean outcome = StringArrayUtils.getLastElement(array);
+    String outcome = StringArrayUtils.getLastElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -265,7 +265,7 @@
     String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
     
     // : When
-    boolean outcome = StringArrayUtils.getLastElement(array);
+    String outcome = StringArrayUtils.getLastElement(array);
     
     // : Then
     System.out.println(outcome);
@@ -299,7 +299,7 @@
     String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
     
     // : When
-    boolean outcome = StringArrayUtils.getSecondToLastElement(array);
+    String outcome = StringArrayUtils.getSecondToLastElement(array);
     
     // : Then
     System.out.println(outcome);
