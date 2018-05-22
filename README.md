@@ -11,8 +11,8 @@
         * `boolean isPangramic(String[] array)`
         * `int getNumberOfOccurrences(String[] array, String value)`
         * `String[] removeValue(String[] array, String value)`
-        * `String[] removeConsecutiveDuplicates(String[] array, String value)`
-        * `String[] packConsecutiveDuplicates(String[] array, String value)`
+        * `String[] removeConsecutiveDuplicates(String[] array)`
+        * `String[] packConsecutiveDuplicates(String[] array)`
         
 * **Purpose**
     * To establish greater familiarity with loops and arrays.
@@ -972,7 +972,7 @@
 
 
 <br><br><br><br>
-## `String[] removeConsecutiveDuplicates(String[] array, String value)`
+## `String[] removeConsecutiveDuplicates(String[] array)`
 * **Description**
     * Given an array of `String` objects, return an array of Strings with conseuctive duplicates removed.
         
