@@ -3,7 +3,8 @@ package com.zipcodewilmington;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class GetLastElementTest {
+public class
+GetLastElementTest {
 
     @Test
     public void testGetLastElement1() {
