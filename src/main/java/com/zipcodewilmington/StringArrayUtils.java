@@ -1,5 +1,8 @@
 package com.zipcodewilmington;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 /**
  * Created by leon on 1/29/18.
  */
@@ -103,9 +106,9 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPangramic(String[] array)
     {
+       String sum = String.valueOf(array);
 
-
-        return false;
+        return sum == "2847";
     }
 
     /**
