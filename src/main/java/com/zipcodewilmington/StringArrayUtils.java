@@ -1,5 +1,9 @@
 package com.zipcodewilmington;
 
+import com.sun.tools.javac.util.ArrayUtils;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
@@ -106,9 +110,25 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPangramic(String[] array)
     {
-       String sum = String.valueOf(array);
+       /* char[] theBit = new char[]{ 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+        String arr = "";
+        int count = 0;
+        for (int i = 0; i < array.length; i++)
+        {
+            arr += array[i];
+        }
+        for (int i = 0; i < arr.length(); i++)
+        {
+          if( arr.charAt(i) == theBit.charAt(0) && arr.charAt(i) <= 'z')
+          {
+              count++;
+          }
+        }*/
 
-        return sum == "2847";
+
+
+
+        return false;
     }
 
     /**
@@ -117,7 +137,15 @@ public class StringArrayUtils {
      * @return number of occurrences the specified `value` has occurred
      */ // TODO
     public static int getNumberOfOccurrences(String[] array, String value) {
-        return 0;
+        int count = 0;
+        for (int i = 0; i < array.length; i++)
+        {
+            if (value.equals(array[i]))
+            {
+                count++;
+            }
+        }
+        return count;
     }
 
     /**
@@ -126,15 +154,55 @@ public class StringArrayUtils {
      * @return array with identical contents excluding values of `value`
      */ // TODO
     public static String[] removeValue(String[] array, String valueToRemove) {
-        return null;
+       int index = 0;
+       for (int i = 0; i < array.length; i++)
+       {
+           if (array[i] != valueToRemove)
+           {
+               array[index++] = array[i];
+           }
+       }
+
+
+        return Arrays.copyOf(array, index);
     }
 
     /**
      * @param array array of chars
      * @return array of Strings with consecutive duplicates removes
      */ // TODO
-    public static String[] removeConsecutiveDuplicates(String[] array) {
-        return null;
+    public static String[] removeConsecutiveDuplicates(String[] array)
+    {
+
+
+        int index = array.length;
+        int counter = 0;
+        int k = 0;
+
+        for (int i = array.length - 1; i > 0; i--)
+        {
+            if (array[i] != null && array[i].equals(array[i-1]))
+                {
+                   array[i] = null;
+                    counter++;
+                }
+
+        }
+        String[] result = new String[array.length - counter];
+        for (int i = 0; i < array.length; i++)
+        {
+            if (array[i] != (null))
+            {
+                result[k] = array[i];
+                k++;
+
+            }
+
+        }
+
+
+
+        return result;
     }
 
     /**
@@ -142,7 +210,36 @@ public class StringArrayUtils {
      * @return array of Strings with each consecutive duplicate occurrence concatenated as a single string in an array of Strings
      */ // TODO
     public static String[] packConsecutiveDuplicates(String[] array) {
-        return null;
+
+        int index = array.length;
+        int counter = 0;
+        int k = 0;
+
+        for (int i = array.length - 1; i > 0; i--)
+        {
+            if (array[i] != null && array[i].charAt(0) == array[i-1].charAt(0))
+            {
+                array[i - 1] += array[i];
+                array[i] = null;
+                counter++;
+            }
+
+        }
+        String[] result = new String[array.length - counter];
+        for (int i = 0; i < array.length; i++)
+        {
+            if (array[i] != (null))
+            {
+                result[k] = array[i];
+                k++;
+
+            }
+
+        }
+
+
+
+        return result;
     }
 
 
